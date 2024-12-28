@@ -11,7 +11,6 @@ This script automates the setup of WireGuard VPN on both VPS and client machines
 
 ## Example
 [![asciicast](https://asciinema.org/a/dge3kxYv0bjsXzRboa0tePqMt.svg)](https://asciinema.org/a/dge3kxYv0bjsXzRboa0tePqMt)
-<img src="example.svg" width="100%" />
 
 ## Prerequisites
 - Ubuntu/Debian based system
