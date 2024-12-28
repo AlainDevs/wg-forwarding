@@ -16,13 +16,7 @@ This script automates the setup of WireGuard VPN on both VPS and client machines
 
 ## Installation
 
-### Direct Execution
-Run the script directly using curl:
-```bash
-curl -s https://raw.githubusercontent.com/AlainDevs/wg-forwarding/refs/heads/master/setup.sh | sudo bash
-```
-
-### Manual Download
+### Download
 1. run the script:
 ```bash
 wget -q https://raw.githubusercontent.com/AlainDevs/wg-forwarding/refs/heads/master/setup.sh && chmod +x setup.sh && sudo ./setup.sh

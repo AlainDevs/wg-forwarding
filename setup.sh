@@ -55,6 +55,7 @@ EOF
 # Function to set up iptables rules on the VPS
 setup_iptables() {
     echo "Setting up iptables rules..."
+    sudo apt install iptables-persistent -y
     sudo iptables -F
     sudo iptables -t nat -F
     sudo iptables -X
@@ -83,7 +84,6 @@ setup_iptables() {
     sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 
     # Save the rules to make them persistent
-    sudo apt install iptables-persistent -y
     sudo iptables-save | sudo tee /etc/iptables/rules.v4
     echo "iptables rules configured."
 }
