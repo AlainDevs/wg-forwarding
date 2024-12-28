@@ -47,7 +47,7 @@ PrivateKey = $client_private_key
 PublicKey = $vps_public_key
 Endpoint = $vps_external_ip:51820
 #AllowedIPs = 0.0.0.0/0
-AllowedIPs = 10.0.0.2/32
+AllowedIPs = 10.0.0.1/32
 PersistentKeepalive = 25
 EOF
 }
