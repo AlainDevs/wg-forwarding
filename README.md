@@ -9,6 +9,11 @@ This script automates the setup of WireGuard VPN on both VPS and client machines
 - iptables rules setup
 - Systemd service management
 
+## Example
+```asciinema
+demo.cast
+```
+
 ## Prerequisites
 - Ubuntu/Debian based system
 - sudo privileges
