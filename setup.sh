@@ -18,8 +18,8 @@ generate_keys() {
 
 # Function to get the external IP address
 get_external_ip() {
-    external_ip=$(curl -s ifconfig.me)
-    echo "External IP Address: $external_ip"
+    external_ip=$(curl -4 -s ifconfig.me)
+    echo "External IPv4 Address: $external_ip"
 }
 
 # Function to write the VPS configuration
@@ -128,7 +128,7 @@ case $choice in
         echo "Client Public Key: $client_public_key"
         echo
         read -p "Enter the VPS's public key: " vps_public_key
-        read -p "Enter the VPS's external IP address: " vps_external_ip
+        read -p "Enter the VPS's external IPv4 address: " vps_external_ip
         echo "Writing Client configuration..."
         write_client_config
         echo "Starting WireGuard..."
