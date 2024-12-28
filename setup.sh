@@ -116,6 +116,13 @@ case $choice in
         echo "Starting WireGuard..."
         sudo systemctl enable wg-quick@wg0
         sudo systemctl start wg-quick@wg0
+        
+        # Enable IP forwarding
+        echo "Enabling IP forwarding..."
+        echo "net.ipv4.ip_forward=1" | sudo tee -a /etc/sysctl.conf
+        sudo sysctl -p
+        echo "IP forwarding enabled."
+        
         echo "VPS setup complete!"
         ;;
     2)
