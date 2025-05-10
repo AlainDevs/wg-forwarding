@@ -40,7 +40,7 @@ EOF
 write_client_config() {
     cat <<EOF | sudo tee /etc/wireguard/wg0.conf
 [Interface]
-Address = 10.0.0.2
+Address = 10.0.0.2/32
 PrivateKey = $client_private_key
 
 [Peer]
